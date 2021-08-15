@@ -1,0 +1,201 @@
+<%- include('base/header') -%>
+
+  <header class="header" id="home">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><span class="text-info font-weight-bold">Trip</span>
+          Planer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#chefs">Destination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#Menus">Hotel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#reserve">CALL NOW! 022 022 0220 <span class="reserve">Sign
+                  Up</span></a>
+            </li>
+            <% if (user) { %>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="/users/profile">Profile <img
+                    src="<%= '/img/' + user.avatar %>" class="rounded-circle" style="width: 32px;height: 30px;"
+                    alt="...">
+                </a>
+              </li>
+              <% } %>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron" style="background-color: #0d122fa3;height: 100%;">
+      <div class="m-5" style="position: relative;top: 8vw;">
+        <p class="display-2 lead text-white text-center" style="border-bottom:1px solid #007bff;"><span
+            class="text-info font-weight-bold">Trip</span> Planer</p>
+        <p class="lead text-white text-center">Make New Adventure</p>
+      </div>
+    </div>
+
+  </header>
+
+  <section id="about" class="m-5">
+    <div class="container">
+      <div class="row bg-white">
+        <div class="col-lg-6 mx-auto mt-3">
+          <h4 class="m-3">About Us</h4>
+          <p class="parag text-left m-3">We're called Trip planer for a reason. It's because we're constantly
+            looking for ways to make your holiday as perfect as possible, from the way we plan the trip to the authentic
+            experiences you'll enjoy while away. Those added touches include several that no other Nepal travel company
+            offers. We like to call it Original Thinking.</p>
+          
+           <p class="parag text-left m-3">After a decade in business and a lifetime of living and travelling in our destinations, we have developed a deep knowledge and formed relationships with the most impressive experts in their fields. We pride ourselves on being able to ask the right questions so that you can trust we get exactly what you're after.</p>
+           <p class="parag text-left m-3">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+           <p class="parag text-left m-3">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+            A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+          </div>
+        <div class="col-lg-6 mx-auto">
+          <img src="sys/2.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="chefs" class="m-5">
+    <div class="container">
+      <div class="row bg-white">
+        <div class="col-lg-12 mx-auto mb-2">
+          <h4 class="text-center mt-4">Trip Planer Provide places </h4>
+          <p class="card-text text-center"><small class="text-muted">Select Your Destination</small></p>
+          <div class="card-group">
+            <div class="card m-2 hovereffect">
+              <img src="sys/place-1.jpg" class="card-img-top" alt="...">
+              <div class="overlay">
+                <h2>Philippines</h2>
+                
+                
+                <a class="info" href="#">8 Tours</a>
+              </div>
+            </div>
+            <div class="card m-2 hovereffect">
+              <img src="sys/place-2.jpg" class="card-img-top" alt="...">
+              <div class="overlay">
+                <h2>Canada</h2>
+                <a class="info" href="#">5 Tours</a>
+              </div>
+            </div>
+            <div class="card m-2 hovereffect">
+              <img src="sys/place-3.jpg" class="card-img-top" alt="...">
+              <div class="overlay">
+                <h2>Thailand</h2>
+                <a class="info" href="#">5 Tours</a>
+              </div>
+            </div>
+            <div class="card m-2 hovereffect">
+              <img src="sys/place-4.jpg" class="card-img-top" alt="...">
+              <div class="overlay">
+                <h2>Paris</h2>
+                <a class="info" href="#">9 Tours</a>
+              </div>
+            </div>
+            <div class="card m-2 hovereffect">
+              <img src="sys/place-5.jpg" class="card-img-top" alt="...">
+              <div class="overlay">
+                <h2>Australia</h2>
+                <a class="info" href="#">7 Tours</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Menus" class="m-5">
+    <div class="container">
+      <div class="row bg-white">
+        <div class="col-lg-12 mx-auto">
+          <h4 class="text-center mt-4">Hotels</h4>
+          <p class="card-text text-center"><small class="text-muted">TEA TIME & DINING</small></p>
+          <div class="col-lg-12 mx-auto mt-3">
+            <div class="d-flex flex-row bd-highlight justify-content-center">
+              <div class="bd-highlight hovereffect"><img src="sys/menu-1.jpg" class="h-100 w-100" alt="...">
+                <div class="overlay">
+                  <h2>Tara Hotel and cafe</h2>
+                </div>
+              </div>
+              <div class="bd-highlight hovereffect"><img src="sys/menu-2.jpg" class="h-100 w-100" alt="...">
+                <div class="overlay">
+                  <h2>NYC pork</h2>
+                </div>
+              </div>
+              <div class="bd-highlight hovereffect"><img src="sys/menu-3.jpg" class="h-100 w-100" alt="...">
+                <div class="overlay">
+                  <h2>godfather grilled</h2>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-row bd-highlight justify-content-center">
+              <div class="bd-highlight hovereffect"><img src="sys/menu-4.jpg" class="h-100 w-100" alt="...">
+                <div class="overlay">
+                  <h2>mack and cheese</h2>
+                </div>
+              </div>
+              <div class="bd-highlight hovereffect"><img src="sys/menu-5.jpg" class="h-100 w-100" alt="...">
+                <div class="overlay">
+                  <h2>american grilled pork</h2>
+                </div>
+              </div>
+              <div class="bd-highlight hovereffect"><img src="sys/chef-6.jpg" class="h-100 w-100" alt="...">
+                <div class="overlay">
+                  <h2>Ibrahim</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="reserve" class="bg-white">
+    <hr>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-sm">
+          <h4 class="mb-3">Find Us</h4>
+          <p class="parag text-left">Facebook  | Trip Planer</p>
+          <p class="parag text-left">Instragram | Trip Planer</p>
+          <p class="parag text-left">Pintrest | Trip planer</p>
+        </div>
+        <div class="col-sm">
+          <h4 class="mb-3">Open Hours</h4>
+          <p class="parag text-left">Monday: Closed</p>
+          <p class="parag text-left">Tuesday to Friday | 7:00 AM - 9:00 PM</p>
+          <p class="parag text-left">Saturday - Sunday | 11:00 AM - 10:00 PM</p>
+        </div>
+        <div class="col-sm">
+          <h4 class="mb-3">Booking</h4>
+          <p class="parag text-left">040-070-0880 | 010-090-0490</p>
+          <p class="parag text-left">tripplaner23@gmail.com</p>
+          <p class="parag text-left">LINE / 40-070-0880</p>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <%- include('base/footer') -%>
