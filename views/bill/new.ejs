@@ -43,7 +43,7 @@
                     <input type="text" name="total" id="total" class="form-control">
                 </div>
                 <div class="form-group col-md-6">
-                        <label for="type">Customer</label>
+                        <label for="type">Customer ID</label>
                         <select name="customerID" class="form-control">
                             <% customer.forEach((customer)=> {%>
                                 <option value="<%= customer._id%>"><%= customer.Email%></option>
@@ -51,7 +51,7 @@
                         </select>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="type">Waiter</label>
+                    <label for="type">First Name</label>
                     <select name="waiter" class="form-control">
                     <% waiter.forEach((waiters)=> {%>
                         <option value="<%= waiters._id%>"><%= waiters.Fname%></option>
@@ -59,7 +59,7 @@
                     </select>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="type">Food</label>
+                    <label for="type">Last Name</label>
                     <select name="food" class="form-control">
                     <% food.forEach((foods)=> {%>
                         <option value="<%= foods._id%>"><%= foods.Name%></option>
@@ -67,7 +67,7 @@
                     </select>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="type">Drink</label>
+                    <label for="type">Tour From</label>
                     <select name="drink" class="form-control">
                     <% drink.forEach((drinks)=> {%>
                         <option value="<%= drinks._id%>"><%= drinks.Name%></option>
@@ -75,7 +75,7 @@
                     </select>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="type">Table</label>
+                    <label for="type">Tour Destination</label>
                     <select name="table" class="form-control">
                     <% table.forEach((tables)=> {%>
                         <option value="<%= tables._id%>"><%= tables.Name%></option>

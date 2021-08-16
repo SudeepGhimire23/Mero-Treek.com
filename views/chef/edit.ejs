@@ -40,28 +40,17 @@
                     <input type="email" name="email" id="title" class="form-control" value="<%= chef.Email%>" >
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="experience">Experience</label>
+                    <label for="experience">To</label>
                     <input type="text" name="experience" id="experience" class="form-control" value="<%= chef.Experience%>" >
                 </div>
                 <div class="form-group col-md-6">
                     <label for="type">Type</label>
                     <input type="text" name="type" id="type" class="form-control" value="<%= chef.Type%>" >
                 </div>
+                
                 <div class="form-group col-md-6">
-                    <label for="salary">Salary</label>
-                    <select  name="salary" id="inputsalary" class="form-control">
-                        <% salary.forEach((salary)=> {%>
-                            <% if(chef.Salary == salary) {%>
-                            <option value="<%= salary %>" selected><%= salary %> $</option>
-                            <% } else { %>
-                            <option value="<%= salary %>"><%= salary %> $</option>
-                            <% } %>
-                        <% }) %>
-                    </select>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="city">City</label>
-                    <select  name="city" id="inputcity" class="form-control">
+                    <label for="city">from</label>
+                    <select  name="From" id="inputcity" class="form-control">
                             <% city.forEach((city)=> {%>
                                 <% if(chef.City == city) {%>
                                 <option value="<%= city %>" selected><%= city %></option>

@@ -40,7 +40,7 @@
                     <input type="text" name="total" id="total" class="form-control" value="<%= bill.Total%>" >
                 </div>
                 <div class="form-group col-md-6">
-                        <label for="type">Customer</label>
+                        <label for="type">Customer ID</label>
                         <select name="customerID" class="form-control">
                         <% customer.forEach((customers)=> {%>
                             <% if(customers._id == bill.CustomerID) {%>
@@ -52,7 +52,7 @@
                         </select>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="type">Waiter</label>
+                    <label for="type">First Name</label>
                     <select name="waiter" class="form-control">
                     <% waiter.forEach((waiters)=> {%>
                         <% if(waiters._id == bill.waiter_id) {%>
@@ -64,7 +64,7 @@
                     </select>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="type">Food</label>
+                    <label for="type">Last Name</label>
                     <select name="food" class="form-control">
                     <% food.forEach((foods)=> {%>
                         <% if(foods._id == bill.food_id) {%>
@@ -76,7 +76,7 @@
                     </select>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="type">Drink</label>
+                    <label for="type">Tour From</label>
                     <select name="drink" class="form-control">
                     <% drink.forEach((drinks)=> {%>                        
                         <% if(drinks._id == bill.drink_id) {%>
@@ -88,7 +88,7 @@
                     </select>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="type">Table</label>
+                    <label for="type">Tour Destination</label>
                     <select name="table" class="form-control">
                     <% table.forEach((tables)=> {%>                  
                         <% if(tables._id == bill.table_id) {%>
